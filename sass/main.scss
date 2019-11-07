@@ -1,0 +1,11 @@
+@import 'modules/vars';
+@import 'modules/lightbox';
+
+
+body{
+    background-color:$bg;
+    color:white;
+}
+.hidden{
+    display:none;
+}

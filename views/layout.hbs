@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css stuff -->
+    <!-- link to reset -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/main.css">
+    <title>Interactive Infographic</title>
+    {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/TextPlugin.min.js"></script> --}}
+</head>
+
+<body>
+    <h1 class="hidden">Gotta love Sql!</h1>
+    
+    <main>
+             
+       
+        </section>
+       <section class="purple">
+       {{{ body }}}
+       </section>
+      
+    </main>
+
+
+    <a id="to-top" href="#" class="nav-item">Back to top</a>
+
+    <script type="module" src="js/main.js"></script>
+    <script>
+        var name = "Elements";
+
+        console.log('name in main file: ' + name);
+    </script>
+
+    <!-- templates -> these don't get rendered immediately -->
+    <template id="book-template">
+        <!-- you can put all kinds of markup here - semantic tagging, etc -->
+        <div class="user-panel">
+            <div class="user-panel-header">
+                <img class="b-cover"></img>
+                <h1 class="b-name"></h1>
+            </div>
+
+            {{!-- <button class="b-button">More Details</button> --}}
+        </div>
+    </template>
+    <!-- end templates-->
+</body>
+
+</html>

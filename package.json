@@ -1,0 +1,33 @@
+{
+  "name": "infographic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "express": "^4.17.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "hbs": "^4.0.6",
+    "mysql": "^2.17.1",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vira-romanko/Romanko_Vira_Interactive_Info.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vira-romanko/Romanko_Vira_Interactive_Info/issues"
+  },
+  "homepage": "https://github.com/vira-romanko/Romanko_Vira_Interactive_Info#readme"
+}

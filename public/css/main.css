@@ -1,0 +1,107 @@
+.lightbox {
+  display: none;
+  flex-direction: row;
+  min-height: 180vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 4000;
+  padding: 20px;
+  background-color: #101017; }
+
+.sidebar {
+  flex: 1;
+  text-align: center; }
+
+.lb-content {
+  flex: 3;
+  animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 2.25vh;
+  margin: 25px; }
+
+img {
+  max-width: 250px; }
+
+.close {
+  cursor: pointer;
+  font-size: 2vh;
+  background-color: #e04153;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  border-radius: 5vh;
+  width: 20%;
+  text-align: center;
+  margin: 0 auto; }
+  .close:hover {
+    animation-name: example;
+    animation-duration: 1s; }
+@keyframes example {
+  from {
+    color: white; }
+  to {
+    color: #101017; } }
+.scroll {
+  margin: 20px;
+  font-size: 2.75vh;
+  color: #3e3d4b;
+  display: flex;
+  margin-left: 0;
+  opacity: 0.8; }
+
+@keyframes slideUpLarge {
+  0% {
+    transform: translateY(0%); }
+  100% {
+    transform: translateY(-100%); } }
+@keyframes slideDownLarge {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0%); } }
+@keyframes moveUp {
+  0% {
+    transform: translateY(150px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes moveDown {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(150px); } }
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8) translateY(100px);
+    opacity: 0; }
+  100% {
+    transform: scale(1) translateY(100px);
+    opacity: 1; } }
+.show-lb {
+  animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  display: block !important; }
+
+.b-quote {
+  font-size: 2.75vh;
+  font-weight: bold;
+  padding: 10px; }
+  .b-quote ul {
+    display: block; }
+
+.quote-js {
+  font-family: 'Arvo', serif;
+  font-size: 2.5vh; }
+
+.desc-js {
+  color: white; }
+
+body {
+  background-color: #10161f;
+  color: white; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
