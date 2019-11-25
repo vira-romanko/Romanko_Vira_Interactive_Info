@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
-    let query = "SELECT ID FROM tbl_history";
+    let query = "SELECT * FROM tbl_history";
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
@@ -42,7 +42,7 @@ router.get('/elements/:id', (req, res) => {
         // turn our social property into an array - its just text in the DB
         // wich isnt really anything we can work with
 
-         result[0].elements = result[0].elements.split(',').map(function(item) {
+         result[0].element = result[0].element.split(',').map(function(item) {
          item = item.trim(); //remove the extra spaces from each word
 
          return item;

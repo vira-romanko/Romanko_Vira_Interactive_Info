@@ -46,7 +46,7 @@
 <path class="st0" d="M59.9,1112.6l-48.1,40.3c15.9,20.8,33.1,40.7,51.3,59.6l45.1-45.1C90.8,1150.1,74.7,1131.8,59.9,1112.6z"/>
 <path class="st1" d="M100.6,1078.5l-40.7,34.1c14.8,19.2,30.9,37.5,48.2,54.8l37.2-37.2C128.8,1113.9,113.9,1096.7,100.6,1078.5z"/>
 
-<g id="all-elements">
+<g class="all-elements">
 <g id="58_element">
 	<path class="st1" d="M145.3,1130.2l-37.2,37.2c17.9,17.9,37,34.7,57.3,50.3l33.1-42C179.4,1161.6,161.6,1146.4,145.3,1130.2z"/>
 	
@@ -1017,21 +1017,21 @@
 </div>
     
 
-    <div class="books">
+    <div class="elements">
         <!-- loop through all our team members and put their info on the page -->
    {{!-- this is exactly like forEach loop with vanila JS --}}
    
-    {{#each data}}
+    {{#each element}}
     <div class="user-panel">
-        {{!-- <img  class="b-cover" src="images/{{description}}"> --}}
-        <a  id="all-elemens" href="{{ID}}">
+        <img  class="b-cover" src="#">
+        <a  id="1" href="{{ID}}">
             <h1 >
-            {{number}}
+            {{person}}
         </h1>
           
         </a> 
      
-        <h3>
+        <h3 >
             {{description}}
         </h3>
 
@@ -1051,14 +1051,12 @@
  <section class="lightbox">
      <h2 class="scroll">Scroll down</h2>
         
-        <div class="sidebar">
-            <img src="" alt="">
-        </div>
 
         <div class="lb-content">
              
 
         </div>
+        <h1 class="name"></h1>
       
        <div class="close">
        <span > Back to all </span>
