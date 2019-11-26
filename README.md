@@ -2,14 +2,14 @@
 
 ## History of the periodic elements
 History of the periodic elements is a still poster made into an interactive infographic. It highlights all the elements presented in the circular form table
-![Image description](public/images/white_background_img01.jpg)
+![Image description](public/images/mockup1.jpg)
 
 
 ## How it works?
 
 Just click on the element to know more about it: the name of the element, a bit of history, and abbreviation.
 
-![Image description](public/images/mockup_desktop_full.png)
+![Image description](public/images/mockup2.jpg)
 
 
 ## Getting started
@@ -41,7 +41,7 @@ Just click on the element to know more about it: the name of the element, a bit 
 
 
 ## Authors
-* **Vira Romanko** -*Developer*
+* **Vira Romanko** -*Developer/Designer*
 
 
 
