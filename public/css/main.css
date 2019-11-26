@@ -5,37 +5,40 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 4000;
+  z-index: 1000;
   padding: 20px;
-  background-color: #101017; }
+  background-color: rgba(2, 9, 17, 0.5);
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 0.2) forwards; }
 
 .sidebar {
   flex: 1;
   text-align: center; }
 
 .lb-content {
-  flex: 3;
-  animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  flex: 1;
   text-align: center;
   vertical-align: middle;
   color: white;
   font-size: 2.25vh;
   margin: 25px; }
 
-img {
-  max-width: 250px; }
-
+@keyframes fadeIn {
+  0% {
+    background: rgba(2, 9, 17, 0); }
+  100% {
+    background: #020911; } }
 .close {
   cursor: pointer;
   font-size: 2vh;
-  background-color: #e04153;
+  background-color: #426DFB;
   padding: 10px;
   border-radius: 50%;
   color: white;
   border-radius: 5vh;
   width: 20%;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
   .close:hover {
     animation-name: example;
     animation-duration: 1s; }
@@ -44,64 +47,205 @@ img {
     color: white; }
   to {
     color: #101017; } }
-.scroll {
-  margin: 20px;
-  font-size: 2.75vh;
-  color: #3e3d4b;
-  display: flex;
-  margin-left: 0;
-  opacity: 0.8; }
-
-@keyframes slideUpLarge {
+@keyframes unfoldIn {
   0% {
-    transform: translateY(0%); }
+    transform: scaleY(0.005) scaleX(0); }
+  50% {
+    transform: scaleY(0.005) scaleX(1); }
   100% {
-    transform: translateY(-100%); } }
-@keyframes slideDownLarge {
-  0% {
-    transform: translateY(-100%); }
-  100% {
-    transform: translateY(0%); } }
-@keyframes moveUp {
-  0% {
-    transform: translateY(150px); }
-  100% {
-    transform: translateY(0); } }
-@keyframes moveDown {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(150px); } }
-@keyframes scaleUp {
-  0% {
-    transform: scale(0.8) translateY(100px);
-    opacity: 0; }
-  100% {
-    transform: scale(1) translateY(100px);
-    opacity: 1; } }
+    transform: scaleY(1) scaleX(1); } }
 .show-lb {
-  animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   display: block !important; }
 
-.b-quote {
-  font-size: 2.75vh;
-  font-weight: bold;
-  padding: 10px; }
-  .b-quote ul {
-    display: block; }
-
-.quote-js {
-  font-family: 'Arvo', serif;
-  font-size: 2.5vh; }
-
 .desc-js {
-  color: white; }
+  color: white;
+  font-size: 3vh; }
+
+.el-name {
+  font-size: 4vh; }
+
+@keyframes colorme {
+  0% {
+    color: #426DFB; }
+  50% {
+    color: #43b7b7; }
+  75% {
+    color: #7f3f98; }
+  100% {
+    color: #426DFB; } }
+.el-abb {
+  font-size: 6vh;
+  animation: colorme 5s infinite; }
 
 body {
   background-color: #10161f;
-  color: white; }
+  color: white;
+  margin: 0 auto; }
 
 .hidden {
   display: none; }
+
+.intro {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 4vh; }
+
+.subheader {
+  animation: intro 5s linear;
+  -moz-animation: intro 5s linear;
+  -webkit-animation: intro 5s linear;
+  -o-animation: intro 5s linear; }
+
+@keyframes intro {
+  0%,
+    100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE; }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80; } }
+.subheader {
+  font-size: 3vh;
+  text-align: center;
+  color: #426DFB;
+  line-height: 10vw;
+  text-shadow: 0 0 3vw #2356FF;
+  margin: 10; }
+
+#elements {
+  margin-top: 30px;
+  margin-left: 30px; }
+
+.all-elements {
+  cursor: pointer; }
+
+.explain {
+  max-width: 20%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+@media screen and (min-width: 768px) {
+  .intro {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 6vh; }
+
+  .subheader {
+    animation: intro 5s linear;
+    -moz-animation: intro 5s linear;
+    -webkit-animation: intro 5s linear;
+    -o-animation: intro 5s linear; }
+
+  @keyframes intro {
+    0%,
+        100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE; }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80; } }
+  .subheader {
+    font-size: 4vh;
+    text-align: center;
+    color: #426DFB;
+    line-height: 10vw;
+    text-shadow: 0 0 3vw #2356FF;
+    margin: 0; }
+
+  #elements {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 30px; }
+
+  .all-elements {
+    cursor: pointer; }
+
+  .explain {
+    max-width: 18%;
+    margin-bottom: 90px;
+    margin-right: 30px;
+    margin-left: 100px;
+    display: initial; } }
+@media screen and (min-width: 1024px) {
+  .lightbox {
+    display: none;
+    flex-direction: row;
+    min-height: 180vh;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px;
+    background-color: rgba(2, 9, 17, 0.5);
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 0.2) forwards; }
+
+  .sidebar {
+    flex: 1;
+    text-align: center; }
+
+  .lb-content {
+    flex: 3;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 2.25vh;
+    margin: 25px; }
+
+  @keyframes fadeIn {
+    0% {
+      background: rgba(2, 9, 17, 0); }
+    100% {
+      background: #020911; } }
+  .close {
+    cursor: pointer;
+    font-size: 2vh;
+    background-color: #426DFB;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    border-radius: 5vh;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+    .close:hover {
+      animation-name: example;
+      animation-duration: 1s; }
+  @keyframes example {
+    from {
+      color: white; }
+    to {
+      color: #101017; } }
+  @keyframes unfoldIn {
+    0% {
+      transform: scaleY(0.005) scaleX(0); }
+    50% {
+      transform: scaleY(0.005) scaleX(1); }
+    100% {
+      transform: scaleY(1) scaleX(1); } }
+  .show-lb {
+    display: block !important; }
+
+  .desc-js {
+    color: white;
+    font-size: 3vh; }
+
+  .el-name {
+    font-size: 4vh; }
+
+  @keyframes colorme {
+    0% {
+      color: #426DFB; }
+    50% {
+      color: #43b7b7; }
+    75% {
+      color: #7f3f98; }
+    100% {
+      color: #426DFB; } }
+  .el-abb {
+    font-size: 6vh;
+    animation: colorme 5s infinite; } }
 
 /*# sourceMappingURL=main.css.map */

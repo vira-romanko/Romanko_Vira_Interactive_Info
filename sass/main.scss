@@ -1,11 +1,6 @@
 @import 'modules/vars';
 @import 'modules/lightbox';
+@import 'modules/basic.scss';
+@import 'modules/media';
 
 
-body{
-    background-color:$bg;
-    color:white;
-}
-.hidden{
-    display:none;
-}

@@ -1,5 +1,5 @@
 
-    <h4 class= "subheader">Click  on the element below!</h4>
+    <h4 class= "subheader">Want to know more about the elements? Just click below!</h4>
 
 <div class="table">
 
@@ -42,6 +42,35 @@
 	.st26{fill:#10161F;stroke:#C0CA62;stroke-miterlimit:10;}
 	.st27{font-size:22.7107px;}
 	.st28{fill:#676867;}
+
+.st20:hover  
+  { fill: #60449B!important;
+
+}
+.st21:hover  
+  { fill: #009E84!important;
+
+}
+	.st25:hover 
+  {
+    
+  fill:#D02A2B!important;
+}
+.st26:hover  
+  {
+    
+  fill:#C0CA62!important;
+}
+
+.st1:hover{
+	fill: #EE8C22!important;
+}
+.st0:hover{
+	fill: #35C5ED!important;
+}
+
+
+
 </style>
 <path class="st0" d="M59.9,1112.6l-48.1,40.3c15.9,20.8,33.1,40.7,51.3,59.6l45.1-45.1C90.8,1150.1,74.7,1131.8,59.9,1112.6z"/>
 <path class="st1" d="M100.6,1078.5l-40.7,34.1c14.8,19.2,30.9,37.5,48.2,54.8l37.2-37.2C128.8,1113.9,113.9,1096.7,100.6,1078.5z"/>
@@ -1011,8 +1040,8 @@
 </g>
 
 </svg>
-
-
+{{!-- <img  class="explain" src="images/explain.svg" alt=""> --}}
+ <object data="images/explain.svg" type="image/svg+xml"  class="explain" id="svg-2"></object> 
 
 </div>
     
@@ -1021,26 +1050,7 @@
         <!-- loop through all our team members and put their info on the page -->
    {{!-- this is exactly like forEach loop with vanila JS --}}
    
-    {{#each element}}
-    <div class="user-panel">
-        <img  class="b-cover" src="#">
-        <a  id="1" href="{{ID}}">
-            <h1 >
-            {{person}}
-        </h1>
-          
-        </a> 
-     
-        <h3 >
-            {{description}}
-        </h3>
-
-
-    </div>
     
-
-
-        {{/each}}
     </div>
     </div>
 
@@ -1049,9 +1059,6 @@
 
 
  <section class="lightbox">
-     <h2 class="scroll">Scroll down</h2>
-        
-
         <div class="lb-content">
              
 
@@ -1059,7 +1066,7 @@
         <h1 class="name"></h1>
       
        <div class="close">
-       <span > Back to all </span>
+       <span > Close </span>
        </div>
     </section>
 
