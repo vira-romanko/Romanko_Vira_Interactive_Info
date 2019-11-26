@@ -1,0 +1,184 @@
+@media screen and (min-width: 768px) {
+    .intro{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 6vh;
+        
+    }
+    .subheader {
+        animation: intro 5s linear;
+        -moz-animation: intro 5s linear ;
+        -webkit-animation: intro 5s linear;
+        -o-animation: intro 5s linear;
+      }
+      
+      @keyframes intro {
+        0%,
+        100% {
+          text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+          color: #28D7FE;
+        }
+        50% {
+          text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+          color: #146C80;
+        }
+      }
+      
+      
+    .subheader{
+        font-size: 4vh;
+        //color:#27384c;
+        text-align: center;
+        color: #426DFB;
+      //font-size: 9vw;
+      line-height: 10vw;
+      text-shadow: 0 0 3vw #2356FF;
+      margin: 0;
+    }
+    
+    #elements
+    {
+        width: 60%;
+        //margin: auto;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    .all-elements{
+        cursor: pointer;
+    }
+    
+    .explain{
+        max-width: 18%;
+        margin-bottom:90px;
+        margin-right: 30px;
+        margin-left: 100px;
+        display:initial;
+        
+    }
+
+
+    
+    
+
+}
+
+@media screen and (min-width: 1024px){
+    .lightbox { 
+        display: none;
+        //display: flex;
+    
+        flex-direction: row;
+        min-height: 180vh;
+        width: 35%;
+    
+        position: fixed;
+        top: 0;
+        right:0;
+        z-index: 1000;
+        padding: 20px;
+    
+        background-color: rgba(2, 9, 17, 0.5);
+        animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 0.2) forwards;
+    
+    }
+    
+        
+        .sidebar {
+            flex: 1;
+           text-align:center;
+      
+        }
+        
+        .lb-content {
+          
+           flex: 3;
+           
+           text-align:center;
+           vertical-align:middle;
+           color:white;
+           font-size: 2.25vh;
+           margin: 25px;
+           
+        }
+    
+        @keyframes fadeIn {
+          0% {
+            background: rgba(2, 9, 17, 0);
+          }
+          100% {
+            background: rgba(2, 9, 17, 1);
+          }
+        }
+        
+        
+    
+    
+        
+    
+      .close {    
+          //right: 45px;
+          //top: 10px;
+          cursor: pointer;
+          font-size: 2vh;
+          //position: fixed;
+          background-color:#426DFB;
+          padding: 10px;
+          border-radius: 50%;
+          color: white;
+          border-radius: 5vh;
+          width: 20%;
+          text-align: center;
+          margin: 0 auto;
+          animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    
+          &:hover{
+              animation-name: example;
+              animation-duration: 1s;
+            }
+            @keyframes example {
+              from {color: white}
+              to {color: #101017;}
+            }
+            
+      }
+      @keyframes unfoldIn {
+        0% {
+          transform:scaleY(.005) scaleX(0);
+        }
+        50% {
+          transform:scaleY(.005) scaleX(1);
+        }
+        100% {
+          transform:scaleY(1) scaleX(1);
+        }
+      }
+    
+      
+          
+    
+    .show-lb {
+     
+    display: block !important; }
+         
+    
+    .desc-js{
+        color:white;
+        font-size: 3vh;
+    }
+    
+    .el-name{
+      font-size: 4vh;
+    }
+    @keyframes colorme {
+      0% { color:#426DFB; }
+      50%{ color:#43b7b7 }
+      75% { color:#7f3f98; }
+      100% { color:#426DFB; }
+    }
+    
+    .el-abb{
+      font-size: 6vh;
+     
+      animation: colorme 5s infinite;
+    }
+}
