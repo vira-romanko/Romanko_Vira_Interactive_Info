@@ -4,10 +4,6 @@ const router = express.Router();
 const sql = require('../utils/sql');
 
 
-
-
-
-
 router.get('/', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
@@ -38,24 +34,8 @@ router.get('/elements/:id', (req, res) => {
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
 
-        console.log(result); // should see objects wrapped in an array
-        // turn our social property into an array - its just text in the DB
-        // wich isnt really anything we can work with
-
-         result[0].element = result[0].element.split(',').map(function(item) {
-         item = item.trim(); //remove the extra spaces from each word
-
-         return item;
-          });
-       console.log('after split: ', result[0]);
-      
-
-
-        // render the home view with dynamic data
-        //res.render('home', { data: result });
-        res.json(result);
-
-       
+        console.log(result); 
+        res.json(result);       
     })
 })
 
